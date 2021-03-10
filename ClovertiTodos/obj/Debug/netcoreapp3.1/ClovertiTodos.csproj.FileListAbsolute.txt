@@ -21,7 +21,14 @@ C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcore
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.csproj.CopyComplete
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.csproj.CoreCompileInputs.cache
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

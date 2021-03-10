@@ -9,10 +9,10 @@ namespace ClevertiTodoList.Services
 {
     public interface ITodoListService
     {
-        public List<Todo> GetAllTodoLists(int? priority, bool searchForCompletedTodos);
-        public void InsertTodoList(Todo todo);
-        public void DeleteTodoList(int ID);
-        public void UpdateTodoList(Todo todo);
+        public List<Todo> GetAllTodoLists(int userID, int? priority, bool searchForCompletedTodos);
+        public void InsertTodoList(int userID, Todo todo);
+        public void DeleteTodoList(int userID, int todoID);
+        public void UpdateTodoList(int userID, Todo todo);
     }
 
     public class TodoListService : ITodoListService
@@ -23,9 +23,8 @@ namespace ClevertiTodoList.Services
             this.repo = repo;
         }
 
-        public List<Todo> GetAllTodoLists(int? priority, bool searchForCompletedTodos)
+        public List<Todo> GetAllTodoLists(int userID, int? priority, bool searchForCompletedTodos)
         {
-            var userID = GetInfoFromHeaders();
             var userTodos = repo.GetUserTodoLists(userID);
             
             if(searchForCompletedTodos)
@@ -41,28 +40,19 @@ namespace ClevertiTodoList.Services
             return userTodos;
         }
 
-        public void InsertTodoList(Todo todo)
+        public void InsertTodoList(int userID, Todo todo)
         {
-            var userID = GetInfoFromHeaders();
             repo.InsertTodoList(userID, todo);
         }
 
-        public void UpdateTodoList(Todo todo)
+        public void UpdateTodoList(int userID, Todo todo)
         {
-            var userID = GetInfoFromHeaders();
             repo.UpdateTodoList(userID, todo);
         }
 
-        public void DeleteTodoList(int ID)
+        public void DeleteTodoList(int userID, int ID)
         {
-            var userID = GetInfoFromHeaders();
             repo.DeleteTodoList(userID, ID);
-        }
-
-        //TODO
-        private int GetInfoFromHeaders()
-        {
-            return -1;
         }
     }
 }

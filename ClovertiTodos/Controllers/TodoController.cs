@@ -1,9 +1,13 @@
 ﻿using ClevertiTodoList.Models;
 using ClevertiTodoList.Services;
+using ClovertiTodos.Models;
+using ClovertiTodos.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ClevertiTodoList.Controllers
 {
@@ -17,15 +21,36 @@ namespace ClevertiTodoList.Controllers
             this.todoListService = todoListService;
         }
 
+        /// <summary>
+        /// Was supposed to get all user info from here but couldnt finish it in time so 
+        /// currently userId is shared via Header and login is not needed
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("login")]
+        [AllowAnonymous]
+        public ActionResult<dynamic> Login([FromBody] User user)
+        {
+            //Add future validations
+
+            var token = TokenService.GenerateToken(user);
+            return new
+            {
+                user,
+                token
+            };
+        }
 
         [HttpGet]
+        //[Authorize]
         [Route("todosList")]
-        public IActionResult GetUserTodoList([FromQuery] int? priority, [FromQuery] bool completed)
+        public IActionResult GetUserTodoList([FromHeader] int userID, [FromQuery] int? priority, [FromQuery] bool completed)
         {
             IActionResult result = null;
             try
             { 
-                var todos = todoListService.GetAllTodoLists(priority, completed);
+                var todos = todoListService.GetAllTodoLists(userID, priority, completed);
                 result = Ok(todos);
             }
             catch(Exception e)
@@ -38,13 +63,14 @@ namespace ClevertiTodoList.Controllers
         }
 
         [HttpPost]
+        //[Authorize]
         [Route("todo")]
-        public IActionResult CreateTodo([FromBody] Todo todo)
+        public IActionResult CreateTodo([FromHeader] int userID, [FromBody] Todo todo)
         {
             IActionResult result = null;
             try
             {
-                todoListService.InsertTodoList(todo);
+                todoListService.InsertTodoList(userID, todo);
                 result = Ok();
             }
             catch (Exception e)
@@ -56,13 +82,14 @@ namespace ClevertiTodoList.Controllers
         }
 
         [HttpPut]
+        //[Authorize]
         [Route("todo")]
-        public IActionResult UpdateTodo([FromBody] Todo todo)
+        public IActionResult UpdateTodo([FromHeader] int userID, [FromBody] Todo todo)
         {
             IActionResult result = null;
             try
             {
-                todoListService.UpdateTodoList(todo);
+                todoListService.UpdateTodoList(userID, todo);
                 result = Ok();
             }
             catch (Exception e)
@@ -74,13 +101,14 @@ namespace ClevertiTodoList.Controllers
         }
 
         [HttpDelete]
+        //[Authorize]
         [Route("todo")]
-        public IActionResult DeleteTodo([FromHeader] int todoID)
+        public IActionResult DeleteTodo([FromHeader] int userID, [FromHeader] int todoID)
         {
             IActionResult result = null;
             try
             {
-                todoListService.DeleteTodoList(todoID);
+                todoListService.DeleteTodoList(userID, todoID);
                 result = Ok();
             }
             catch(Exception e)
