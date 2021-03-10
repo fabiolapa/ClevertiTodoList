@@ -33,7 +33,7 @@ namespace ClevertiTodoList.Repositories
             {
                 userTodos = GetAllUserTodos(userID);
             }
-            return userTodos.Values.Where(todo => !todo.isDone).ToList();
+            return userTodos.Values.ToList();
         }
 
         public void InsertTodoList(int userID, Todo todo)

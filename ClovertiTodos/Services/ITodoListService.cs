@@ -26,11 +26,7 @@ namespace ClevertiTodoList.Services
         public List<Todo> GetAllTodoLists(int userID, int? priority, bool searchForCompletedTodos)
         {
             var userTodos = repo.GetUserTodoLists(userID);
-            
-            if(searchForCompletedTodos)
-            {
-                userTodos = userTodos.Where(todo => todo.isDone).ToList();
-            }
+            userTodos = userTodos.Where(todo => todo.isDone == searchForCompletedTodos).ToList();
 
             if(priority.HasValue)
             {
