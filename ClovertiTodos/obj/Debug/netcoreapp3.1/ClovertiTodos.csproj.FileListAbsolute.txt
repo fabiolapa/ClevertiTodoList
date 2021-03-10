@@ -20,7 +20,8 @@ C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcore
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.csproj.CopyComplete
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.csproj.CoreCompileInputs.cache
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\obj\Debug\netcoreapp3.1\ClovertiTodos.csproj.CopyComplete
+C:\Users\fabio\Desktop\Cleverti\ClevertiTodoList\ClovertiTodos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

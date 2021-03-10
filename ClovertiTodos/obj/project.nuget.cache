@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oCpWGPPYOav5wTTXKGfGnX5rRWw9+kreTqWN2dMJUu/wat2eVm8EhT2uWQUN/SZ/UGhMrQQ5+IsGgarWs2z7rA==",
+  "dgSpecHash": "bqxld+7W550Qy2LtgJIHQmFOHKB5WpocIVLXQU7iJPBCXGRLTMRtJCbV2FfUs0dcMpjuO68Fi0SEvHgv0LCE/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\fabio\\Desktop\\Cleverti\\ClevertiTodoList\\ClovertiTodos\\ClovertiTodos.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\fabio\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\fabio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.0\\swashbuckle.aspnetcore.6.1.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.0\\swashbuckle.aspnetcore.swagger.6.1.0.nupkg.sha512",
     "C:\\Users\\fabio\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.0\\swashbuckle.aspnetcore.swaggergen.6.1.0.nupkg.sha512",
